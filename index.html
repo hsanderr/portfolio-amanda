@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        html {
+            background-color: black;
+            padding: none;
+            margin: 0px 0px 0px 0px;
+        }
+
+        body {
+            background-color: white;
+            width: 100vw;
+            margin: 0px 0px 0px 0px;
+            font-family: 'Nunito', monospace;
+        }
+
+        @media screen and (max-width: 540px) {
+
+            header,
+            main,
+            footer {
+                margin: none;
+                padding: 10px 15%;
+            }
+        }
+
+        @media screen and (min-width: 540px) {
+
+            header,
+            main,
+            footer {
+                margin: none;
+                padding: 10px 20%;
+            }
+        }
+
+        header {
+            display: flex;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            margin: 0px 5px;
+        }
+
+        .nav-link:hover {
+            color: #005c05;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .separador {
+            background-color: #005c05;
+            width: 70%;
+            height: 2px;
+            margin-bottom: 30px;
+        }
+
+        .ver-mais {
+            background-color: black;
+            padding: 5px 10px;
+            margin-left: 0px;
+            color: white;
+        }
+
+        .ver-mais:hover {
+            background-color: #005c05;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            margin: 20px 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a58332475d.js" crossorigin="anonymous"></script>
+    <title>Amanda Ialamov</title>
+</head>
+
+<body>
+    <header>
+        <span class="uppercase">Amanda Ialamov</span>
+        <nav>
+            <a href="#" class="uppercase nav-link">Bio</a>
+            <a href="#" class="uppercase nav-link">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="">Em destaque...</h2>
+        <div class="separador"></div>
+        <!-- <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg"
+            alt="Imagem do projeto em destaque" width="100%"> -->
+        <img src="https://media.tenor.com/0v9CbBqU8bAAAAAC/red-moon-white-moon.gif" alt="Imagem do projeto em destaque"
+            width="100%">
+        <h1 class="uppercase">Nome Projeto</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ut, delectus aperiam nisi molestiae qui
+            laudantium provident maxime natus tenetur atque placeat quas ea veniam nam maiores voluptas. Officiis,
+            porro.</p>
+        <a href="#" class="ver-mais">Ver mais</a>
+    </main>
+    <footer>
+        <h2>Contato</h2>
+        <ul>
+            <li><i class="fa-brands fa-whatsapp"></i>&nbsp;(11) 98855-8625</li>
+            <li><i class="fa-brands fa-instagram"></i>&nbsp;/amandaia_</li>
+        </ul>
+    </footer>
+</body>
