@@ -27,7 +27,7 @@
             main,
             footer {
                 margin: none;
-                padding: 10px 15%;
+                padding: 10px 5%;
             }
         }
 
@@ -37,7 +37,7 @@
             main,
             footer {
                 margin: none;
-                padding: 10px 20%;
+                padding: 10px 5%;
             }
         }
 
@@ -90,6 +90,59 @@
             margin: 0;
             padding: 0;
         }
+
+        .cards-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 28%;
+            display: inline-block;
+            border: solid;
+            border-radius: 10px;
+            word-wrap: break-word;
+            z-index: 0;
+        }
+
+        .card:hover {
+            background-color: #005c05;
+            border: solid;
+            border-color: #005c05;
+            color: white;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-image {
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            padding: 25px;
+            overflow: hidden;
+        }
+
+        .fixed {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .destaque-img, .destaque-body {
+        }
+
+        .destaque-img {
+            width: 30%;
+        }
+
+        .destaque-body {
+            height: 30%;
+            width: 40%;
+        }
     </style>
     <script src="https://kit.fontawesome.com/a58332475d.js" crossorigin="anonymous"></script>
     <title>Amanda Ialamov</title>
@@ -104,17 +157,63 @@
         </nav>
     </header>
     <main>
+        <h2>Trabalhos</h2>
+        <div class="separador"></div>
+        <div class="cards-container">
+            <a href="#" class="card">
+                <img class="card-image" width="100%"
+                    src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                    alt="">
+                <div class="card-body">
+                    <h3>Trabalho 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img class="card-image" width="100%"
+                    src="https://images.unsplash.com/photo-1496154704336-6c88a94a019a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+                <div class="card-body">
+                    <h3>Trabalho 2</h3>
+                    <p> Eum in sed quos nostrum quibusdam vitae, non hic autem omnis voluptate dolores deserunt architecto iure
+                        fugit ut quasi labore eius vero.</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img class="card-image" width="100%"
+                    src="https://images.unsplash.com/photo-1600461186623-d5551c00fc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=933&q=80"
+                    alt="">
+                <div class="card-body">
+                    <h3>Trabalho 3</h3>
+                    <p>Iusto quam architecto ipsa autem quisquam nostrum et quia exercitationem dolores similique delectus
+                        perspiciatis tempore voluptatem placeat in quidem, rerum cumque nesciunt!</p>
+                </div>
+            </a>
+        </div>
         <h2 class="">Em destaque...</h2>
         <div class="separador"></div>
         <!-- <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg"
             alt="Imagem do projeto em destaque" width="100%"> -->
-        <img src="https://media.tenor.com/0v9CbBqU8bAAAAAC/red-moon-white-moon.gif" alt="Imagem do projeto em destaque"
-            width="100%">
-        <h1 class="uppercase">Nome Projeto</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ut, delectus aperiam nisi molestiae qui
-            laudantium provident maxime natus tenetur atque placeat quas ea veniam nam maiores voluptas. Officiis,
-            porro.</p>
-        <a href="#" class="ver-mais">Ver mais</a>
+        <img class="destaque-img" src="https://media.tenor.com/0v9CbBqU8bAAAAAC/red-moon-white-moon.gif"
+            alt="Imagem do projeto em destaque" width="30%">
+        <div class="destaque-body">
+            <h1 class="uppercase">Nome Projeto</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ut, delectus aperiam nisi molestiae qui
+                laudantium provident maxime natus tenetur atque placeat quas ea veniam nam maiores voluptas. Officiis,
+                porro.</p>
+            <a href="#" class="ver-mais">Ver mais</a>
+        </div>
+        <!-- <h2 class="">Em destaque...</h2>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="separador"></div> -->
+        <!-- <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg"
+                                                                                                                                                                                                                                                            alt="Imagem do projeto em destaque" width="100%"> -->
+        <!-- <img src="https://media.tenor.com/0v9CbBqU8bAAAAAC/red-moon-white-moon.gif" alt="Imagem do projeto em destaque"
+                                                                                                                                                                                                                                                            width="100%">
+                                                                                                                                                                                                                                                        <h1 class="uppercase">Nome Projeto</h1>
+                                                                                                                                                                                                                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ut, delectus aperiam nisi molestiae qui
+                                                                                                                                                                                                                                                            laudantium provident maxime natus tenetur atque placeat quas ea veniam nam maiores voluptas. Officiis,
+                                                                                                                                                                                                                                                            porro.</p>
+                                <a href="#" class="ver-mais">Ver mais</a> -->
     </main>
     <footer>
         <h2>Contato</h2>
