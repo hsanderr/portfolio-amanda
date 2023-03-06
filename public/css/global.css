@@ -13,11 +13,29 @@ a {
     text-decoration: none;
 }
 
+footer {
+    min-height: 100vh;
+}
+
 /* .outer-button { 
 } */
 
+.bg-nyanza {
+    background-color: #e1f4cb;
+}
+
+.bg-smoky-black {
+    background-color: #14110F;
+}
+
+.musgo-bar {
+    background-color: #005c05;
+    width: 100%;
+    height: 4px;
+}
+
 .nav-link {
-    background-color: #fff;
+    background-color: #e1f4cb;
     border: solid 3px #000;
     color: #000;
 }
@@ -31,6 +49,13 @@ a {
 .see-more {
     color: #000;
     border: solid black 3px;
+    border-radius: 0px;
+}
+
+.see-more-white {
+    color: #fbfbfb;
+    border: solid #fbfbfb 3px;
+    border-radius: 0px;
 }
 
 .see-more:hover {
@@ -39,14 +64,18 @@ a {
     color: #fff;
 }
 
+.see-more-white:hover {
+    border-color: #005c05;
+    background-color: #005c05;
+    color: #fbfbfb;
+}
+
 .text-musgo {
     color: #005c05;
 }
 
-.musgo-bar {
-    background-color: #005c05;
-    width: 100%;
-    height: 4px;
+.text-nyanza {
+    color: #e1f4cb;
 }
 
 .bg-musgo {
