@@ -1,0 +1,36 @@
+<nav class="col-12 col-lg-6 text-center text-lg-end pt-2">
+  <% if (page !== 'home') { %> <% if (page === 'bio') { %>
+  <a
+    class="nav-link nav-link-bio text-uppercase fs-3 px-3 d-lg-inline mb-2 mb-lg-0 text-center"
+    href="/"
+    >Início</a
+  >
+  <% } else { %>
+  <a
+    class="nav-link text-uppercase fs-3 px-3 d-lg-inline mb-2 mb-lg-0 text-center"
+    href="/"
+    >Início</a
+  >
+  <% } %> <% } %> <% if (page !== 'bio') { %>
+  <a
+    class="nav-link text-uppercase fs-3 px-3 d-lg-inline mb-2 mb-lg-0 text-center"
+    href="/bio"
+    >Bio</a
+  >
+  <% } %> <% if (page === 'bio') { %>
+  <a
+    class="nav-link nav-link-bio text-uppercase fs-3 px-3 d-lg-inline text-center"
+    href="#contato"
+    >Contato</a
+  >
+  <% } else { %>
+  <a
+    class="nav-link text-uppercase fs-3 px-3 d-lg-inline text-center"
+    href="#contato"
+    >Contato</a
+  >
+  <% } %>
+  <!-- <a class="nav-link text-uppercase fs-3 d-md-inline px-3" href="#"
+      >Projetos</a
+    > -->
+</nav>

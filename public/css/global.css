@@ -20,6 +20,15 @@ footer {
 /* .outer-button { 
 } */
 
+.amandaialamov {
+    font-family: 'Allura', cursive;
+    font-size: 3.5rem;
+}
+
+.bg-fawn {
+    background-color: #FFBF81;
+}
+
 .bg-nyanza {
     background-color: #e1f4cb;
 }
@@ -28,8 +37,18 @@ footer {
     background-color: #14110F;
 }
 
+.bio-main {
+    min-height: 100vh;
+}
+
 .musgo-bar {
     background-color: #005c05;
+    width: 100%;
+    height: 4px;
+}
+
+.dark-red-bar {
+    background-color: #881600;
     width: 100%;
     height: 4px;
 }
@@ -46,6 +65,18 @@ footer {
     color: #fff;
 }
 
+.nav-link-bio {
+    background-color: #FFBF81;
+    border: solid 3px #000;
+    color: #000;
+}
+
+.nav-link-bio:hover {
+    background-color: #881600;
+    border: solid 3px #881600;
+    color: #fff;
+}
+
 .see-more {
     color: #000;
     border: solid black 3px;
@@ -55,6 +86,12 @@ footer {
 .see-more-white {
     color: #fbfbfb;
     border: solid #fbfbfb 3px;
+    border-radius: 0px;
+}
+
+.see-more-bio {
+    color: #000;
+    border: solid black 3px;
     border-radius: 0px;
 }
 
@@ -68,6 +105,12 @@ footer {
     border-color: #005c05;
     background-color: #005c05;
     color: #fbfbfb;
+}
+
+.see-more-bio:hover {
+    border-color: #881600;
+    background-color: #881600;
+    color: #fff;
 }
 
 .text-musgo {

@@ -1,27 +1,12 @@
-<%- include('partials/header') %>
+<%- include('partials/docStart') %>
 
 <body class="mb-0 pb-0 bg-nyanza">
   <div class="container">
     <header class="row pt-2 mb-4">
-      <span class="text-uppercase fs-3 col-6 text-start">Amanda Ialamov</span>
-      <nav class="text-md-end col-6 text-end">
-        <a
-          class="nav-link text-uppercase fs-3 px-3 d-inline text-center"
-          href="#"
-          >Bio</a
-        >
-        <a
-          class="nav-link text-uppercase fs-3 px-3 d-inline text-center"
-          href="#contato"
-          >Contato</a
-        >
-        <!-- <a class="nav-link text-uppercase fs-3 d-md-inline px-3" href="#"
-          >Projetos</a
-        > -->
-      </nav>
+      <%- include('partials/amandaIalamov') %> <%- include('partials/navbar') %>
     </header>
     <main class="container-fluid px-0 mb-3">
-      <div class="row mb-md-3">
+      <!-- <div class="row mb-md-3">
         <div class="col-12 col-md-3">
           <div style="padding-top: 100%; position: relative">
             <iframe
@@ -43,7 +28,7 @@
             funcionamento.
           </p>
         </div>
-      </div>
+      </div> -->
       <h1>Em destaque...</h1>
       <div class="musgo-bar d-block mb-4"></div>
       <% for (let i = 0; i < 1; i++) { %>
@@ -62,84 +47,41 @@
           </h2>
           <!-- <div class="musgo-bar d-block mb-5"></div> -->
           <p class="fs-5 mb-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-            laborum odio minus praesentium labore eos accusantium soluta natus
-            necessitatibus quibusdam, debitis nemo, atque officia reprehenderit
-            molestiae eius, repellendus exercitationem voluptates?
+            O curta aborda a rotina da estilista e tingideira natural Thanina
+            Godinho, dando visibilidade a sua marca. "A mulher que planta cor"
+            invoca a moda autossustentável, a beleza do criar cores e tons,
+            sentir o processo por inteiro e estar em contato com a natureza,
+            sabendo utilizar os seus recursos de maneira equilibrada.
           </p>
+          <div class="mb-3">
+            <a
+              href="https://youtu.be/4Ja8VegqQ7A"
+              target="_blank"
+              class="btn see-more see-more-white fs-3 py-2 px-3 d-block"
+              >Ver teaser no YouTube</a
+            >
+          </div>
           <div>
             <a
-              href="#"
-              class="btn see-more see-more-white fs-3 py-2 px-3 d-inline"
-              >Ver mais</a
+              href="https://youtu.be/8efarqvz4eY"
+              target="_blank"
+              class="btn see-more see-more-white fs-3 py-2 px-3 d-block"
+              >Ver no YouTube</a
             >
           </div>
         </div>
       </div>
       <% } %>
       <div class="d-flex justify-content-center">
-        <a href="#" class="btn see-more fs-3 py-2 px-3 w-100 text-center mb-5"
+        <a
+          href="/projetos"
+          class="btn see-more fs-3 py-2 px-3 w-100 text-center mb-5"
           >Ver todos os projetos</a
         >
       </div>
     </main>
   </div>
-  <footer class="bg-smoky-black mb-0 py-3" id="contato">
-    <div class="container text-light pt-3 pb-2">
-      <!-- <h2 class="text-lg-center fs-1">Contato</h2> -->
-
-      <h2 class="fs-3 mb-4">Contato</h2>
-      <!-- <ul
-        class="list-unstyled fs-5 d-lg-flex justify-content-center g-4 ps-0 fs-1"
-      > -->
-      <ul class="list-unstyled g-4 ps-0 fs-4 mb-5">
-        <!-- <li class="mx-lg-3 ps-0 m-0"> -->
-        <li class="ps-0 m-0 mb-4">
-          <a href="#" class="contact ps-0"
-            ><i class="fa-brands fa-instagram"></i>&nbsp;amandaia_</a
-          >
-        </li>
-        <!-- <li class="mx-lg-3"> -->
-        <li class="mb-4">
-          <a href="#" class="contact">
-            <i class="fa-brands fa-whatsapp"></i>&nbsp;(11) 98855-8625
-          </a>
-        </li>
-        <!-- <li class="mx-lg-3"> -->
-        <li class="mb-4">
-          <a href="#" class="contact">
-            <i class="fa-regular fa-envelope"></i>&nbsp;amanda.ialamov@gmail.com
-          </a>
-        </li>
-        <!-- <div class="d-inline">&nbsp;&nbsp;&nbsp;</div> -->
-      </ul>
-      <h2 class="fs-3 mb-4">Enviar uma mensagem</h2>
-      <form action="/" method="POST" class="m-0 p-0">
-        <div class="mb-3 fs-4">
-          <label for="email" class="form-label">Seu email</label>
-          <input
-            type="email"
-            class="form-control"
-            name="user[email]"
-            id="email"
-            placeholder="nome@exemplo.com"
-          />
-        </div>
-        <div class="mb-4 fs-4">
-          <label for="msg" class="form-label">Mensagem</label>
-          <textarea
-            class="form-control"
-            name="user[msg]"
-            id="msg"
-            rows="3"
-          ></textarea>
-        </div>
-        <button class="btn see-more-white fs-4 text-light" type="submit">
-          Enviar
-        </button>
-      </form>
-    </div>
-  </footer>
+  <%- include('partials/footer') %>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -147,4 +89,4 @@
   ></script>
 </body>
 
-<%- include('partials/footer') %>
+<%- include('partials/docEnd') %>
