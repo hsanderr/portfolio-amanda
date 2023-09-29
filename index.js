@@ -55,6 +55,18 @@ const projetos = [
     'perpetua',
     'https://youtu.be/hUgAjQ7iS0Q'
   ),
+  new Projeto(
+    'Vinheta Tipografia Cinematográfica',
+    'Vinheta submetida ao 7° Concurso de Vinhetas do Canal Curta! (2023).',
+    'vinheta_tipografia',
+    'https://youtu.be/jXn1wbCVogo'
+  ),
+  new Projeto(
+    'Vinheta Queda TV',
+    'Vinheta submetida ao 7° Concurso de Vinhetas do Canal Curta! (2023).',
+    'vinheta_tv',
+    'https://youtu.be/Ii-nFC3nTGY'
+  )
 ];
 
 // Transporter to send emails
