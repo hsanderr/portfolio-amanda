@@ -1,92 +1,173 @@
-<%- include('partials/docStart') %>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<body class="mb-0 pb-0 bg-nyanza">
-  <div class="container">
-    <header class="row pt-2 mb-4">
-      <%- include('partials/amandaIalamov') %> <%- include('partials/navbar') %>
-    </header>
-    <main class="container-fluid px-0 mb-3">
-      <!-- <div class="row mb-md-3">
-        <div class="col-12 col-md-3">
-          <div style="padding-top: 100%; position: relative">
-            <iframe
-              src="https://gifer.com/embed/1Kj6"
-              width="100%"
-              height="100%"
-              style="position: absolute; top: 0; left: 0"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <p><a href="https://gifer.com">via GIFER</a></p>
-        </div>
-        <div class="col-12 col-md-9">
-          <p class="fs-5">
-            Este site se encontra em construção, alguns elementos podem não
-            estar funcionando ainda. O envio de mensagens na seção de
-            <a href="#contato">contato</a>, entretanto, já se encontra em
-            funcionamento.
-          </p>
-        </div>
-      </div> -->
-      <h1>Em destaque...</h1>
-      <div class="musgo-bar d-block mb-4"></div>
-      <% for (let i = 0; i < 1; i++) { %>
-      <div class="row mb-4 bg-smoky-black w-100 m-0 p-0">
-        <div class="col-12 col-lg-6 mb-3 mb-lg-0 p-0">
-          <img
-            class="ratio bg-dark text-light"
-            src="/imgs/a_mulher_que_planta_cor.jpeg"
-            alt="A mulher que planta cor"
-            style="--bs-aspect-ratio: 124.36%"
-          />
-        </div>
-        <div class="col-12 col-lg-6 bg-smoky-black text-light p-5">
-          <h2 class="text-uppercase mb-5 text-light">
-            A mulher que planta cor
-          </h2>
-          <!-- <div class="musgo-bar d-block mb-5"></div> -->
-          <p class="fs-5 mb-5">
-            O curta aborda a rotina da estilista e tingideira natural Thanina
-            Godinho, dando visibilidade a sua marca. "A mulher que planta cor"
-            invoca a moda autossustentável, a beleza do criar cores e tons,
-            sentir o processo por inteiro e estar em contato com a natureza,
-            sabendo utilizar os seus recursos de maneira equilibrada.
-          </p>
-          <div class="mb-3">
-            <a
-              href="https://youtu.be/4Ja8VegqQ7A"
-              target="_blank"
-              class="btn see-more see-more-white fs-3 py-2 px-3 d-block"
-              >Ver teaser no YouTube</a
-            >
-          </div>
-          <div>
-            <a
-              href="https://youtu.be/8efarqvz4eY"
-              target="_blank"
-              class="btn see-more see-more-white fs-3 py-2 px-3 d-block"
-              >Ver no YouTube</a
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff6600" />
+  <link rel="icon" type="image/x-icon" href="/imgs/favicon.png" />
+  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/a58332475d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Great+Vibes&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Phudu:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Amanda Ialamov | Portfólio</title>
+</head>
+
+<body>
+  <main id="main" class="d-flex justify-content-between flex-column">
+    <nav class="navbar navbar-expand-md p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#bio">Amanda Ialamov</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarList" aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarList">
+          <div class="navbar-nav">
+            <a class="nav-link fs-3" href="#contato">Contato</a>
+            <a class="nav-link fs-3" href="#trabalhos">Ver trabalhos</a>
           </div>
         </div>
       </div>
-      <% } %>
-      <div class="d-flex justify-content-center">
-        <a
-          href="/projetos"
-          class="btn see-more fs-3 py-2 px-3 w-100 text-center mb-5"
-          >Ver todos os projetos</a
-        >
+    </nav>
+    <h1 class="sr-only">Amanda Ialamov: Produtora Audiovisual</h1>
+  </main>
+  <section class="container-flex sections">
+    <div class="row sections-part sections-projects pe-0">
+      <div class="col-12 col-md-9 p-5">
+        <h2 class="mb-4 ps-4" id="trabalhos">Trabalhos</h2>
+        <div class="container-flex">
+          <div class="row sections-part-curtas">
+            <div class="col-12 col-xxl-1 project-type-curtas">
+              <h3 class="ps-4 ps-xxl-0">CURTAS</h3>
+              <div class="dummy-for-rule"></div>
+            </div>
+            <div class="col-12 col-xxl-11">
+              <div class="container-flex">
+                <div class="row px-4 text-center mt-4 mt-md-0">
+                  <div class="col-6 col-md-4">
+                    <a target="_blank" href="https://youtu.be/8efarqvz4eY">
+                      <img src="/imgs/mulhercorcrop.jpeg" alt="Cartaz do curta A Mulher que Planta Cor">
+                      <div class="pt-3">
+                        <h4>A Mulher que Planta Cor</h4>
+                        <p>Direção e edição</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <a target="_blank" href="https://youtu.be/zimDpGkG3eg">
+                      <img src="/imgs/agorafobia.jpeg" alt="Cartaz do curta Agorafobia">
+                      <div class="pt-3">
+                        <h4>Agorafobia</h4>
+                        <p>Direção de arte e atuação</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4 mt-md-0 mt-3">
+                    <a target="_blank" href="https://youtu.be/hUgAjQ7iS0Q">
+                      <img src="/imgs/perpetuacrop.jpeg" alt="Cartaz do curta Perpétua">
+                      <div class="pt-3">
+                        <h4>Perpétua</h4>
+                        <p>Montagem e edição</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row sections-part-vinhetas">
+            <div class="col-12 col-xxl-10 vinhetas">
+              <div class="container-flex">
+                <div class="row px-3 text-center mt-4 mt-md-0">
+                  <div class="col-6 col-md-3">
+                    <a target="_blank" href="https://youtu.be/DZsKQZTAYdY">
+                      <img class="img-vinhetas" src="/imgs/vinheta-colagem.png" alt="Cartaz da vinheta Colagem">
+                      <div class="pt-3">
+                        <h4>Vinheta "Colagem": vencedora do 7º Cocurso de Vinhetas do Canal Curta!</h4>
+                        <p>Criação integral</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <a target="_blank" href="https://youtu.be/Q9UyTE4S8FA">
+                      <img class="img-vinhetas" src="/imgs/vinheta-tipografia-variada.png" alt="Cartaz da vinheta Tipografia Variada">
+                      <div class="pt-3">
+                        <h4>Vinheta "Tipografia Variada"</h4>
+                        <p>Criação integral</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-3 mt-md-0 mt-3">
+                    <a target="_blank" href="https://youtu.be/jXn1wbCVogo">
+                      <img class="img-vinhetas" src="/imgs/vinheta-resumindo.png" alt="Cartaz da vinheta Resumindo">
+                      <div class="pt-3">
+                        <h4>Vinheta "Resumindo"</h4>
+                        <p>Criação integral</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-3 mt-md-0 mt-3">
+                    <a target="_blank" href="https://youtu.be/XDzjDu1ZRHc">
+                      <img class="img-vinhetas" src="/imgs/vinheta-curta-tv.png" alt="Cartaz da vinheta Curta TV">
+                      <div class="pt-3">
+                        <h4>Vinheta "Curta TV"</h4>
+                        <p>Criação integral</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xxl-2 project-type-vinhetas">
+              <h3 class="ps-4 ps-xxl-0">7º CONCURSO DE VINHETAS<br>DO CANAL CURTA!</h3>
+              <div class="dummy-for-rule"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-  </div>
-  <%- include('partials/footer') %>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"
-  ></script>
+      <div class="col-0 col-md-3 bg-orange">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-flex sections" id="bio">
+    <div class="row sections-part sections-bio pe-0">
+      <div class="col-12 col-md-4 bg-black px-0 overflow-hidden">
+        <img src="/imgs/perfil.jpg" alt="Foto de perfil de Amanda Ialamov">
+      </div>
+      <div class="col-12 col-md-8 ps-5 pt-5 text-end">
+        <div class="col-10 text-end ps-5 pb-5">
+          <h2 class="mb-4">Bio</h2>
+          <p class="fs-5">Sou uma produtora audiovisual formada em 2021, tenho um <a href="https://api3.baraodemaua.br/media/23782/amanda-ialamov.pdf">artigo de Iniciação Científica publicado</a> e já atuo no mercado há mais de dois anos. Minha principal área de atuação até o momento é como editora dentro de uma produtora e estou me especializando na área de direção para cinema, tv, publicidade e mídias digitais, através de um curso da EBAC (Escola Britânica de Artes Criativas e Tecnologia), em que eu participei de um concurso de roteiros e tive o meu trabalho selecionado para uma bolsa integral. Venho buscando novas experiências e oportunidades dentro do campo do audiovisual. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="d-flex flex-column justify-content-center bg-smoky-black mb-0 py-3" id="contato">
+    <div class="container text-light text-center pt-3 pb-2">
+      <h2 class="fs-1 mb-4">CONTATO</h2>
+      <ul class="list-unstyled g-4 ps-0 fs-5 mb-5">
+        <li class="ps-0 m-0 mb-4">
+          <a href="https://www.instagram.com/amandaia_/" target="_blank" class="contact ps-0"><i class="fa-brands fa-instagram"></i>&nbsp;amandaia_</a>
+        </li>
+        <li class="mb-4">
+          <a href="https://wa.me/5511988558625" target="_blank" class="contact">
+            <i class="fa-brands fa-whatsapp"></i>&nbsp;(11) 98855-8625
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="mailto:amanda.ialamov@gmail.com" target="_blank" class="contact">
+            <i class="fa-regular fa-envelope"></i>&nbsp;amanda.ialamov@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 
-<%- include('partials/docEnd') %>
+</html>
