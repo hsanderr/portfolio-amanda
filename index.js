@@ -1,14 +1,5 @@
 const express = require('express');
-const router = express.Router();
 const path = require('path');
-// const nodemailer = require('nodemailer'); // require nodemailer to send pwd recovery email
-// if (process.env.NODE_ENV !== 'production') {
-//   require('dotenv').config();
-// }
-
-// const emailUser = process.env.EMAIL_USER;
-// const emailPwd = process.env.EMAIL_PWD;
-// const personalEmail = 'amanda.ialamov@gmail.com';
 
 const app = express();
 const port = 3000;
@@ -100,27 +91,6 @@ app.get('/projetos', (req, res) => {
   const page = 'projetos';
   res.render('projetos', { projetos, page });
 });
-// .post('/', (req, res) => {
-//   const { email, msg } = req.body.user;
-//   const mailOptions = {
-//     from: emailUser,
-//     to: personalEmail,
-//     subject: 'Contato através do portfólio',
-//     html: `
-//     <h1>Você tem uma nova mensagem do seu portfólio!</h1>
-//     <h2>Usuário:</h2>
-//     <p>${email}</p>
-//     <h2>Mensagem:</h2>
-//     <p>${msg}</p>`,
-//   };
-//   transporter.sendMail(mailOptions, (err, inf) => {
-//     if (err) {
-//       res.render('emailError');
-//     } else {
-//       res.render('emailSuccess');
-//     }
-//   });
-// });
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
